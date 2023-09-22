@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="calc" id="main">
+    <form name="form" action="">
+      <input type="text" name="math" placeholder="0">
+      <input type="button" value="1" onclick="form.math.value+=1">
+      <input type="button" value="2" onclick="form.math.value+=2">
+      <input type="button" value="3" onclick="form.math.value+=3">
+      <input type="button" value="4" onclick="form.math.value+=4">
+      <input type="button" value="5" onclick="form.math.value+=5">
+      <input type="button" value="6" onclick="form.math.value+=6">
+      <input type="button" value="7" onclick="form.math.value+=7">
+      <input type="button" value="8" onclick="form.math.value+=8">
+      <input type="button" value="9" onclick="form.math.value+=9">
+      <input type="button" value="C" onclick="form.math.value=''">
+      <input type="button" value="0" onclick="form.math.value+=0">
+      <input type="button" value="=" onclick="form.math.value=eval(form.math.value)">
+      <input type="button" value="+" onclick="plus()">
+      <input type="button" value="-" onclick="minus()">
+      <input type="button" value="/" onclick="divide()">
+      <input type="button" value="*" onclick="mult()">
+    </form>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
